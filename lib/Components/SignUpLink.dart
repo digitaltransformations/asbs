@@ -12,7 +12,7 @@ class SignUp extends StatelessWidget {
       ),
       onPressed: (){},
       child: new Text(
-        "Forget Password ? ",
+        "Forget Password d? ",
         textAlign: TextAlign.center,
         overflow: TextOverflow.ellipsis,
         softWrap: true,
