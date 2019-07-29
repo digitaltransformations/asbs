@@ -12,7 +12,7 @@ class SignUp extends StatelessWidget {
       ),
       onPressed: (){},
       child: new Text(
-        "Don't have an account? Sign Up",
+        "Don't have an account? Sign U",
         textAlign: TextAlign.center,
         overflow: TextOverflow.ellipsis,
         softWrap: true,
