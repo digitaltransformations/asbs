@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:asbs/Login/index.dart';
 import 'package:asbs/home.dart';
+import 'package:asbs/forgetpassword/forgetPass.dart';
 
 class Routes {
   Routes() {
@@ -21,6 +22,12 @@ class Routes {
               builder: (_) => new HomeScreen(),
               settings: settings,
             );
+
+          case '/forget':
+              return new MyCustomRoute(
+                 builder: (_)=> new ForgetPassword(),
+                settings: settings,
+              );
         }
       },
     ));

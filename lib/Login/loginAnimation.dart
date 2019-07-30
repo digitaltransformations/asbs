@@ -86,7 +86,7 @@ class StaggerAnimation extends StatelessWidget {
                     ),
                     child: buttonSqueezeanimation.value > 75.0
                         ? new Text(
-                            "Sign In",
+                            "تسجيل الدخول",
                             style: new TextStyle(
                               color: Colors.white,
                               fontSize: 20.0,

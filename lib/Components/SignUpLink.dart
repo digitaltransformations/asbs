@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:asbs/forgetpassword/forgetPass.dart';
+
 
 class SignUp extends StatelessWidget {
   SignUp();
@@ -10,10 +12,11 @@ class SignUp extends StatelessWidget {
       padding: const EdgeInsets.only(
         top: 160.0,
       ),
-      onPressed: (){},
+      onPressed: () => Navigator.pushReplacementNamed(context, "/forget"),
+
       child: new Text(
-        "Forget Password d? ",
-        textAlign: TextAlign.center,
+        "هل نسيت الرقم السرى ؟  ",
+        textAlign: TextAlign.right,
         overflow: TextOverflow.ellipsis,
         softWrap: true,
         style: new TextStyle(

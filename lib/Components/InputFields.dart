@@ -19,12 +19,13 @@ class InputFieldArea extends StatelessWidget {
             ),
 
           child: new TextFormField(
+            textAlign: TextAlign.right,
             obscureText: obscure,
             style: const TextStyle(
               color: Colors.white,
             ),
             decoration: new InputDecoration(
-              icon: new Icon(
+              suffixIcon: new Icon(
                 icon,
                 color: Colors.white,
               ),
