@@ -108,7 +108,7 @@ class LoginScreenState extends State<LoginScreen>
                                         });
                                         _playAnimation();
                                       },
-                                      child: new SignIn()),
+                                      child: new SignIn("تسجيل الدخول")),
                                 )
                               : new StaggerAnimation(
                                   buttonController:

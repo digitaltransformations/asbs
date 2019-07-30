@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:asbs/Components/SignInButton.dart';
+
 
 class ForgetPassword extends StatelessWidget {
   @override
@@ -8,9 +10,7 @@ class ForgetPassword extends StatelessWidget {
         title: new Container(
           alignment: Alignment.centerRight,
           child: new Text(
-
             "SBAS",
-
             style: new TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -18,6 +18,7 @@ class ForgetPassword extends StatelessWidget {
             textDirection: TextDirection.rtl,
           ),
         ),
+
         flexibleSpace: Container(
           decoration: new BoxDecoration(
               gradient: new LinearGradient(
@@ -34,11 +35,12 @@ class ForgetPassword extends StatelessWidget {
 
 
       body: Container(
-
+         color: Colors.white70,
 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+
             new Container(
               padding: EdgeInsets.only(left: 50, right: 50),
               child: new Column(
@@ -52,7 +54,6 @@ class ForgetPassword extends StatelessWidget {
                         child: new Text(
                           "تعديل كلمة السر",
                           textAlign:TextAlign.right,
-
                           style: TextStyle(
                               fontSize: 25.0,
                               fontWeight: FontWeight.bold,
@@ -70,6 +71,7 @@ class ForgetPassword extends StatelessWidget {
                             "نحن فقط بحاجة إلى معرفة البريد الإلكتروني الخاص بالتسجيل لإرسال رابط إعادة التعيين",
                         textAlign: TextAlign.right,),
                       )),
+
                   Container(
                     padding: EdgeInsets.only(top: 15),
                     child: new Directionality(
@@ -77,46 +79,25 @@ class ForgetPassword extends StatelessWidget {
                       child: new TextField(
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
-                            suffixIcon: Icon(
-
+                          suffixIcon: Icon(
                               Icons.email,
                               textDirection: TextDirection.rtl,
                             ),
                             labelText: "البريد الالكترونى ", ),
                       ),
                     ),
-
-//                  new TextField(
-//                    decoration: InputDecoration(
-//                        icon: Icon(Icons.email), hintText: "Email"),
-//                    keyboardType: TextInputType.emailAddress,
-//                  ),
                   ),
+
                   Container(
                       padding: EdgeInsets.only(top: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           Container(
-                              decoration: BoxDecoration(
-                                  borderRadius:
-                                  BorderRadius.all(Radius.circular(15)),
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      const Color(0xff187cd4),
-                                      const Color(0xFF4B9FE7)
-                                    ],
-                                  )),
-                              child: ButtonTheme(
-                                minWidth: 200,
-                                child: FlatButton(
-                                  onPressed: null,
-                                  child: Text(
-                                    "اعداد كلمة سر جديدة",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ),
-                              )),
+                                  width:300.0,
+                                  child: SignIn("اعداد كلمة سر جديدة"),
+                          )
+
                         ],
                       ))
                 ],

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SignIn extends StatelessWidget {
-  SignIn();
+  SignIn(this.title);
+  var title;
   @override
   Widget build(BuildContext context) {
     return (new Container(
@@ -13,7 +14,7 @@ class SignIn extends StatelessWidget {
         borderRadius: new BorderRadius.all(const Radius.circular(30.0)),
       ),
       child: new Text(
-        "تسجيل دخول",
+          title,
         style: new TextStyle(
           color: Colors.white,
           fontSize: 20.0,
